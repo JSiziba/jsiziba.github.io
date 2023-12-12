@@ -7,7 +7,7 @@
 <div class="w-full flex flex-col gap-5">
 
   <section>
-    <p>
+    <p class="text-left ">
       Ever since I was young, the joy of building something from the ground up has captivated me. This passion found its true calling in software development during my  studies in
       <a target="_blank" href="https://www.uz.ac.zw/index.php/commerce-departments/104-business-studies/programmes-offered-business-studies/206-bachelor-of-business-studies-computing-science-degree-4-years">Bachelor of Business Studies and Computing Science (HBSCTC 2017)</a> at <a target="_blank" href="https://www.uz.ac.zw/">University of Zimbabwe</a>. Fast forward to today, and I've had the incredible opportunity to create impactful software solutions for a
       <a target="_blank" href="https://www.afcholdings.co.zw/">top commercial bank</a> and a <a target="_blank" href="https://jemina.capital/">leading stock broking company</a> in Zimbabwe, as well as an

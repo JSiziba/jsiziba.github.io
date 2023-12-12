@@ -1,8 +1,19 @@
-<script>
+<script lang="ts">
     import "../app.css";
+    import { goto } from "$app/navigation";
+    let showMenu = false;
+    function dismissMenuModal(e: MouseEvent) {
+      if (e.target === e.currentTarget) {
+        showMenu = false;
+      }
+    }
+    function navigateTo(location: string){
+      goto(location);
+      showMenu = false;
+    }
 </script>
 
-<div class="h-screen w-screen bg-kaladin-gray overflow-hidden flex text-highstorm-white gap-14">
+<div class="h-screen w-screen bg-kaladin-gray overflow-hidden flex  text-highstorm-white gap-14">
     <aside class="w-fit h-full flex-col justify-between pt-14 pb-5 pl-14 hidden lg:flex">
       <section>
         <h1>
@@ -37,34 +48,36 @@
       </section>
     </aside>
 
-    <main class="h-screen flex flex-col flex-grow">
-      <div class="flex lg:hidden w-full h-[55px] bg-windrunner-blue-primary items-center px-5">
+    <main class="h-screen flex flex-col w-full">
+      <div class="flex justify-between lg:hidden w-full h-[55px] bg-windrunner-blue-primary items-center px-5">
         <h1 class="font-[400] text-[20px]">
-          <a href="/">
             Johnson Andrew Siziba
-          </a>
         </h1>
+        <button class="outline-0 border-0 bg-transparent" on:click={ ()=> showMenu = !showMenu }>
+          <img class="h-[32px] aspect-auto" alt="Menu" src="/svgs/menu.svg">
+        </button>
       </div>
-      <div class="h-full mt-14 mb-5 overflow-y-auto custom-scrollbar px-14 w-full">
+      <div class="h-full mt-14 mb-5 overflow-y-auto custom-scrollbar px-10  lg:px-14 w-full">
         <slot></slot>
       </div>
     </main>
 
 </div>
 
+{#if showMenu}
+  <div class="z-10 fixed h-screen w-screen left-0 top-0 bg-black bg-opacity-75 flex justify-center text-highstorm-white" on:click={ dismissMenuModal }>
 
-<div class="z-10 fixed h-screen w-screen left-0 top-0 bg-black bg-opacity-75 flex justify-center text-highstorm-white hidden">
-
-  <div class="bg-kaladin-gray shadow-lg rounded-lg w-[80%] h-fit px-8 mt-[20%] py-14">
+    <div class="bg-kaladin-gray shadow-lg rounded-lg w-[80%] h-fit px-8 mt-[20%] py-14">
       <p class="font-[400] text-[20px]">MENU</p>
-    <div class="px-5 pt-5">
-      <div class="flex flex-row gap-5 text-windrunner-blue-secondary font-extralight text-[18px] items-center px-1 py-2 cursor-pointer border-t border-windrunner-blue-secondary">
-        <span>About me</span>
-      </div>
-      <div class="flex flex-row gap-5 text-windrunner-blue-secondary font-light text-[18px] items-center px-1 py-2 cursor-pointer border-y border-windrunner-blue-secondary">
-        <span>My notes</span>
+      <div class="px-5 pt-5">
+        <div on:click={navigateTo("/")} class="flex flex-row gap-5 text-windrunner-blue-secondary font-extralight text-[18px] items-center px-1 py-2 cursor-pointer border-t border-windrunner-blue-secondary">
+          <span>About me</span>
+        </div>
+        <div class="flex flex-row gap-5 text-windrunner-blue-secondary font-light text-[18px] items-center px-1 py-2 cursor-pointer border-y border-windrunner-blue-secondary">
+          <span>My notes</span>
+        </div>
       </div>
     </div>
-  </div>
 
-</div>
+  </div>
+{/if}

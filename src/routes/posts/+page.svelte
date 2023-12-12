@@ -9,9 +9,9 @@
     <table class="table-auto table w-full mt-10 text-left relative">
       <thead class="bg-windrunner-blue-primary">
         <tr>
-          <th class="px-4 py-2">Title</th>
-          <th class="px-4 py-2">Tags</th>
-          <th class="px-4 py-2">Date</th>
+          <th class="px-4 py-2 ">Title</th>
+          <th class="px-4 py-2 hidden lg:table-cell">Tags</th>
+          <th class="px-4 py-2 hidden lg:table-cell">Date</th>
         </tr>
       </thead>
       <tbody>
@@ -21,10 +21,10 @@
           <td class="border border-slate-600 px-4 py-2">
             <a href="/posts">My awesome notes</a>
           </td>
-          <td class="border border-slate-600 px-4 py-2">
+          <td class="border border-slate-600 px-4 py-2 hidden lg:table-cell">
             Tag, tag, tag
           </td>
-          <td class="border border-slate-600 px-4 py-2">
+          <td class="border border-slate-600 px-4 py-2 hidden lg:table-cell">
             24 January 2024
           </td>
         </tr>
