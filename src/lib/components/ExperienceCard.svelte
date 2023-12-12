@@ -21,7 +21,7 @@
         <div class="flex">
           <SkillPill {...skill} />
           {#if index < skills.length - 1}
-            <span class="text-windspren-green">,</span>
+            <span class="text-windspren-green lg:hidden">,</span>
           {/if}
         </div>
       {/each}

@@ -6,6 +6,12 @@
 
 <div class="w-full flex flex-col gap-5">
 
+  <div class="flex flex-col gap-3 justify-center lg:hidden mb-5">
+    <h1 class="font-bold text-[32px] text-center">Johnson Andrew Siziba</h1>
+    <h2 class="font-[500] text-[24px] text-center">Software Engineer</h2>
+    <p class="font-normal text-[16px] text-center">Navigating the Infinite Possibilities of Software</p>
+  </div>
+
   <section>
     <p class="text-left ">
       Ever since I was young, the joy of building something from the ground up has captivated me. This passion found its true calling in software development during my  studies in

@@ -13,8 +13,8 @@
     }
 </script>
 
-<div class="h-screen w-screen bg-kaladin-gray overflow-hidden flex  text-highstorm-white gap-14">
-    <aside class="w-fit h-full flex-col justify-between pt-14 pb-5 pl-14 hidden lg:flex">
+<div class="h-screen w-screen bg-bunting-blue overflow-hidden flex  text-highstorm-white">
+    <aside class="w-fit h-full flex-col justify-between pt-14 pb-5 pl-14 lg:pl-20 hidden lg:flex">
       <section>
         <h1>
           <a class="font-bold text-[32px] whitespace-nowrap text-highstorm-white hover:text-highstorm-white hover:no-underline" href="/">
@@ -50,14 +50,11 @@
 
     <main class="h-screen flex flex-col w-full">
       <div class="flex justify-between lg:hidden w-full h-[55px] bg-windrunner-blue-primary items-center px-5">
-        <h1 class="font-[400] text-[20px]">
-            Johnson Andrew Siziba
-        </h1>
         <button class="outline-0 border-0 bg-transparent" on:click={ ()=> showMenu = !showMenu }>
           <img class="h-[32px] aspect-auto" alt="Menu" src="/svgs/menu.svg">
         </button>
       </div>
-      <div class="h-full mt-14 mb-5 overflow-y-auto custom-scrollbar px-10  lg:px-14 w-full">
+      <div class="h-full mt-14 mb-5 overflow-y-auto custom-scrollbar px-10 lg:px-20 xl:px-40 w-full">
         <slot></slot>
       </div>
     </main>
@@ -70,10 +67,10 @@
     <div class="bg-kaladin-gray shadow-lg rounded-lg w-[80%] h-fit px-8 mt-[20%] py-14">
       <p class="font-[400] text-[20px]">MENU</p>
       <div class="px-5 pt-5">
-        <div on:click={navigateTo("/")} class="flex flex-row gap-5 text-windrunner-blue-secondary font-extralight text-[18px] items-center px-1 py-2 cursor-pointer border-t border-windrunner-blue-secondary">
+        <div on:click={ () => navigateTo("/")} class="flex flex-row gap-5 text-windrunner-blue-secondary font-extralight text-[18px] items-center px-1 py-2 cursor-pointer border-t border-windrunner-blue-secondary">
           <span>About me</span>
         </div>
-        <div class="flex flex-row gap-5 text-windrunner-blue-secondary font-light text-[18px] items-center px-1 py-2 cursor-pointer border-y border-windrunner-blue-secondary">
+        <div on:click={ () => navigateTo("/posts")} class="flex flex-row gap-5 text-windrunner-blue-secondary font-light text-[18px] items-center px-1 py-2 cursor-pointer border-y border-windrunner-blue-secondary">
           <span>My notes</span>
         </div>
       </div>

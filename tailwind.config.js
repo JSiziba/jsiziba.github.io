@@ -11,6 +11,7 @@ export default {
         'highstorm-white': '#ffffff',
         'sylphrena-cyan': '#00c2a8',
         'windspren-green': '#00aa55',
+        'bunting-blue': '#141C44',
       }
     },
   },
