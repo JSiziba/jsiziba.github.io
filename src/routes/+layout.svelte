@@ -2,4 +2,69 @@
     import "../app.css";
 </script>
 
-<slot></slot>
+<div class="h-screen w-screen bg-kaladin-gray overflow-hidden flex text-highstorm-white gap-14">
+    <aside class="w-fit h-full flex-col justify-between pt-14 pb-5 pl-14 hidden lg:flex">
+      <section>
+        <h1>
+          <a class="font-bold text-[32px] whitespace-nowrap text-highstorm-white hover:text-highstorm-white hover:no-underline" href="/">
+            Johnson Andrew Siziba
+          </a>
+        </h1>
+        <h2 class="font-[500] text-[24px]">Software Engineer</h2>
+        <p class="pt-3.5 font-normal text-[16px]">Navigating the Infinite Possibilities of Software</p>
+      </section>
+
+      <section>
+        <a href="/">
+          <div class="flex flex-row gap-5 text-highstorm-white font-[400] text-[20px] items-center cursor-pointer">
+            <span class="w-[40px] border-b-[2px] border-highstorm-white"></span>
+            <span>ABOUT ME</span>
+          </div>
+        </a>
+        <a href="/posts">
+          <div class="flex flex-row gap-5 text-highstorm-white font-[400] text-[20px] items-center mt-3.5 cursor-pointer">
+            <span class="w-[40px] border-b-[2px] border-highstorm-white"></span>
+            <span>MY NOTES</span>
+          </div>
+        </a>
+      </section>
+
+      <section>
+        <div class="flex gap-5">
+          <img class="w-[32px] h-[32px]" src="/svgs/github.svg" alt="Github" />
+          <img class="w-[32px] h-[32px]" src="/svgs/mail.svg" alt="Mail" />
+        </div>
+      </section>
+    </aside>
+
+    <main class="h-screen flex flex-col flex-grow">
+      <div class="flex lg:hidden w-full h-[55px] bg-windrunner-blue-primary items-center px-5">
+        <h1 class="font-[400] text-[20px]">
+          <a href="/">
+            Johnson Andrew Siziba
+          </a>
+        </h1>
+      </div>
+      <div class="h-full mt-14 mb-5 overflow-y-auto custom-scrollbar px-14 w-full">
+        <slot></slot>
+      </div>
+    </main>
+
+</div>
+
+
+<div class="z-10 fixed h-screen w-screen left-0 top-0 bg-black bg-opacity-75 flex justify-center text-highstorm-white hidden">
+
+  <div class="bg-kaladin-gray shadow-lg rounded-lg w-[80%] h-fit px-8 mt-[20%] py-14">
+      <p class="font-[400] text-[20px]">MENU</p>
+    <div class="px-5 pt-5">
+      <div class="flex flex-row gap-5 text-windrunner-blue-secondary font-extralight text-[18px] items-center px-1 py-2 cursor-pointer border-t border-windrunner-blue-secondary">
+        <span>About me</span>
+      </div>
+      <div class="flex flex-row gap-5 text-windrunner-blue-secondary font-light text-[18px] items-center px-1 py-2 cursor-pointer border-y border-windrunner-blue-secondary">
+        <span>My notes</span>
+      </div>
+    </div>
+  </div>
+
+</div>
