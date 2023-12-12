@@ -1,3 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-weight: 400;
+  font-size: medium;
+  color: theme('colors.highstorm-white');
+  line-height: 1.5;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: theme('colors.transparent');
+  border-radius: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: theme('colors.windrunner-blue-secondary');
+  border-radius: 5px;
+}
+
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #c1c1c1 #f1f1f1;
+}
+
+a {
+    text-decoration: none;
+    color: theme('colors.windspren-green');
+}
+
+a:hover {
+    text-decoration: underline;
+    color: theme('colors.stormlight-gold');
+}
