@@ -1,10 +1,11 @@
 <script lang="ts">
   import ExperienceCard from "$lib/components/ExperienceCard.svelte";
   import { PersonalInformationService } from "$lib/services/PersonalInformationService";
+  import ProjectCard from "$lib/components/ProjectCard.svelte";
   const experience = PersonalInformationService.experience;
 </script>
 
-<div class="w-full flex flex-col gap-5">
+<div class="w-full flex flex-col gap-20">
 
   <div class="flex flex-col gap-3 justify-center lg:hidden mb-5">
     <h1 class="font-bold text-[32px] text-center">Johnson Andrew Siziba</h1>
@@ -38,6 +39,38 @@
       {#each experience as exp}
         <ExperienceCard {...exp}  />
       {/each}
+    </div>
+  </section>
+
+  <section>
+    <h2>
+      <a class="text-lg font-medium text-highstorm-white" href="/pdf/JOHNSON%20A.%20SIZIBA%20CV.pdf" download>View Full CV</a>
+    </h2>
+  </section>
+
+  <section>
+    <h2 class="text-lg font-medium">PROJECTS</h2>
+
+    <div class="mt-10">
+      <ProjectCard
+        title="Jemina Capital"
+        description="A mobile application for Jemina Capital, a leading stock broking company in Zimbabwe."
+        picture="/images/jemina-capital.png"
+        link="https://play.google.com/store/apps/details?id=com.jemina.capital"
+        skills={[]}
+        rating="4.5k+ Downloads"
+      />
+    </div>
+
+  </section>
+
+  <section>
+    <div class="w-full flex items-center">
+      <p class="max-w-[700px] text-sylphrena-cyan">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur cupiditate deserunt dolorem excepturi illo in minus molestiae nesciunt nostrum obcaecati optio placeat praesentium quaerat sequi similique tempore, ut vitae.
+        <br> <br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, consectetur dolores harum maxime minima necessitatibus quas quis sit unde veritatis? Accusamus dolorum et incidunt optio praesentium ratione sed tempora temporibus?
+      </p>
     </div>
   </section>
 

@@ -1,0 +1,19 @@
+<script>
+  import Title from "$lib/components/typography/Title.svelte";
+  import Heading1 from "$lib/components/typography/Heading1.svelte";
+  import Heading2 from "$lib/components/typography/Heading2.svelte";
+  import Heading3 from "$lib/components/typography/Heading3.svelte";
+  import Heading4 from "$lib/components/typography/Heading4.svelte";
+  import Paragraph from "$lib/components/typography/Paragraph.svelte";
+  import CodeBlock from "$lib/components/typography/CodeBlock.svelte";
+</script>
+
+<div class="flex gap-3 flex-col">
+  <Title>My Title</Title>
+  <Heading1>My Heading1</Heading1>
+  <Heading2>My Heading2</Heading2>
+  <Heading3>My Heading3</Heading3>
+  <Heading4>My Heading4</Heading4>
+  <Paragraph>My Paragraph</Paragraph>
+  <CodeBlock url="https://gist.github.com/JSiziba/767ec44b740cb60b7ab81c945ade29b8" />
+</div>
