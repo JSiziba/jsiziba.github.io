@@ -6,17 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="79711abc-d3da-4120-aed9-44cc0d0f362b" name="Changes" comment="Typography">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/SkillPill.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/SkillPill.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/typography/CodeBlock.svelte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+layout.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/posts/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/posts/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/posts/creating-a-new-branch-in-git/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/posts/creating-a-new-branch-in-git/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/ExperienceCard.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/ExperienceCard.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +80,7 @@
       <workItem from="1697637753127" duration="22000" />
       <workItem from="1698598993024" duration="259000" />
       <workItem from="1702624247437" duration="78000" />
-      <workItem from="1702624344130" duration="2123000" />
+      <workItem from="1702624344130" duration="2656000" />
     </task>
     <task id="LOCAL-00001" summary="Typography">
       <option name="closed" value="true" />
