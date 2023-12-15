@@ -3,71 +3,163 @@ import type { JobPost } from "$lib/models/JobPost";
 export class PersonalInformationService {
     public static experience: JobPost[] = [
       {
-        title: "Software Engineer",
-        duration: "2021 - Present",
-        description: "I am currently working as a software engineer at a company called Cognite. I am working on a product called Cognite Data Fusion, which is a data platform for industrial data. I am working on the front end team, and we are using React and TypeScript.",
-        companyName: "Cognite",
-        companyWebsite: "https://www.cognite.com/",
+        title: "Software Developer",
+        duration: "May 2023 - Present",
+        description: "As Head of IT and Systems Development, I developed" +
+          "digital products that streamlined internal processes, " +
+          "expanded the client base, conducted market analysis, " +
+          "and produced insightful reports for stock traders.",
+        companyName: "Quintessence Software",
+        companyWebsite: "https://www.quintessencesoftware.com/",
         skills: [
           {
-            name: "React",
-            link: "https://reactjs.org/"
+            name: "Angular",
+            link: ""
           },
-{
+          {
+            name: "Svelte Kit",
+            link: ""
+          },
+          {
+            name: "C#",
+            link: ""
+          },
+          {
+            name: ".NET Core",
+            link: ""
+          },
+          {
             name: "TypeScript",
-            link: "https://www.typescriptlang.org/"
+            link: ""
           },
           {
-            name: "JavaScript",
-            link: "https://www.javascript.com/"
+            name: "Scrum",
+            link: ""
           },
           {
-            name: "HTML",
-            link: "https://html.com/"
-          },
-          {
-            name: "CSS",
-            link: "https://www.w3schools.com/css/"
-          },
-          {
-            name: "Google Cloud Platform",
-            link: "https://cloud.google.com/"
-          },
-          {
-            name: "Cognite Data Fusion",
-            link: "https://www.cognite.com/product/data-fusion/"
+            name: "Git",
+            link: ""
           }
         ]
       },
       {
-        title: "Software Engineer",
-        duration: "2021 - Present",
-        description: "I am currently working as a software engineer at a company called Cognite. I am working on a product called Cognite Data Fusion, which is a data platform for industrial data. I am working on the front end team, and we are using React and TypeScript.",
-        companyName: "Cognite",
-        companyWebsite: "https://www.cognite.com/",
+        title: "Systems Developer/Analyst",
+        duration: "Sept. 2021 - April 2023",
+        description: "As Head of IT and Systems Development, I developed" +
+          "digital products that streamlined internal processes, " +
+          "expanded the client base, conducted market analysis, " +
+          "and produced insightful reports for stock traders.",
+        companyName: "Jemina Capital",
+        companyWebsite: "https://jemina.capital/",
         skills: [
           {
-            name: "JavaScript",
-            link: "https://www.javascript.com/"
+            name: "Java",
+            link: ""
           },
           {
-            name: "HTML",
-            link: "https://html.com/"
+            name: "Spring Boot",
+            link: ""
+          },
+          {
+            name: "Angular",
+            link: ""
+          },
+          {
+            name: "Laravel",
+            link: ""
+          },
+          {
+            name: "Vue",
+            link: ""
           },
           {
             name: "CSS",
+            link: ""
+          },
+          {
+            name: "SQL",
+            link: ""
+          },
+          {
+            name: "Git",
+            link: ""
+          },
+          {
+            name: "Ubuntu Server",
+            link: ""
+          },
+          {
+            name: "Flutter",
+            link: ""
+          },
+          {
+            name: "Microservices Architecture",
+            link: ""
+          },
+        ]
+      },
+
+      {
+        title: "Digital Products Developer",
+        duration: "June - Sept 2022",
+        description: "As a key member of the Digital Transformations " +
+          "department, I improved customer engagement and " +
+          "designed and developed digital products, including " +
+          "the AFC Mobile Banking app.",
+        companyName: "AFC Commercial Bank",
+        companyWebsite: "https://www.afcholdings.co.zw/",
+        skills: [
+          {
+            name: "Flutter",
+            link: ""
+          },
+          {
+            name: "Angular",
+            link: ""
+          },
+          {
+            name: "Fast API",
             link: "https://www.w3schools.com/css/"
           },
           {
-            name: "Google Cloud Platform",
-            link: "https://cloud.google.com/"
+            name: "Laravel",
+            link: ""
           },
           {
-            name: "Cognite Data Fusion",
-            link: "https://www.cognite.com/product/data-fusion/"
+            name: "SpringBoot",
+            link: ""
           }
         ]
       },
+      {
+        title: "E-Channels Developer (Internship)",
+        duration: "Jan - Dec 2021",
+        description: "As an AFC Bank systems development intern, I " +
+          "maintained internal systems, contributed to internet " +
+          "banking development, and provided customer " +
+          "support.",
+        companyName: "AFC Commercial Bank",
+        companyWebsite: "https://www.afcholdings.co.zw/",
+        skills: [
+          {
+            name: "Laravel",
+            link: ""
+          },
+          {
+            name: "Vue",
+            link: ""
+          },
+          {
+            name: "Postilion Core Banking System",
+            link: ""
+          },
+          {
+            name: "Temenos T24 Core Banking System",
+            link: ""
+          },
+        ]
+      },
+
 
     ];
 }

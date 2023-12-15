@@ -12,7 +12,7 @@
 
 
 <div class="w-full flex flex-col lg:flex-row gap-3 lg:gap-8 p-5 hover:bg-highstorm-white hover:bg-opacity-5 hover:shadow rounded-sm">
-  <h2 class="uppercase text-[20px] font-normal text-windrunner-blue-secondary whitespace-nowrap">{duration}</h2>
+  <h2 class="text-[18px] text-center font-light text-windrunner-blue-secondary w-1/3">{duration}</h2>
   <div class="flex flex-col gap-4 flex-grow">
     <h2><a rel="external" target="_blank" href={companyWebsite}>{title} <span>.</span> {companyName}</a></h2>
     <p>{description}</p>

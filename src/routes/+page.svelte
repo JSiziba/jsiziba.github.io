@@ -49,17 +49,17 @@
   </section>
 
   <section>
-    <h2 class="text-lg font-medium">PROJECTS</h2>
+<!--    <h2 class="text-lg font-medium">PROJECTS</h2>-->
 
     <div class="mt-10">
-      <ProjectCard
-        title="Jemina Capital"
-        description="A mobile application for Jemina Capital, a leading stock broking company in Zimbabwe."
-        picture="/images/jemina-capital.png"
-        link="https://play.google.com/store/apps/details?id=com.jemina.capital"
-        skills={[]}
-        rating="4.5k+ Downloads"
-      />
+<!--      <ProjectCard-->
+<!--        title="Jemina Capital"-->
+<!--        description="A mobile application for Jemina Capital, a leading stock broking company in Zimbabwe."-->
+<!--        picture="/images/jemina-capital.png"-->
+<!--        link="https://play.google.com/store/apps/details?id=com.jemina.capital"-->
+<!--        skills={[]}-->
+<!--        rating="4.5k+ Downloads"-->
+<!--      />-->
     </div>
 
   </section>

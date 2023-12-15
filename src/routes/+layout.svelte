@@ -1,6 +1,8 @@
 <script lang="ts">
     import "../app.css";
     import { goto } from "$app/navigation";
+    import { navigating } from '$app/stores';
+
     let showMenu = false;
     function dismissMenuModal(e: MouseEvent) {
       if (e.target === e.currentTarget) {
@@ -11,6 +13,9 @@
       goto(location);
       showMenu = false;
     }
+
+    let selectedMenuIndex: number = 0;
+
 </script>
 
 <div class="h-screen w-screen  overflow-hidden flex  text-highstorm-white">
@@ -26,24 +31,28 @@
       </section>
 
       <section>
-        <a href="/">
-          <div class="flex flex-row gap-5 text-highstorm-white font-[400] text-[20px] items-center cursor-pointer">
-            <span class="w-[40px] border-b-[2px] border-highstorm-white"></span>
-            <span>ABOUT ME</span>
+        <a class="hover:no-underline" href="/" on:click={() => {selectedMenuIndex = 0}}>
+          <div class="flex flex-row gap-3 text-highstorm-white font-[400] text-[20px] items-center cursor-pointer {selectedMenuIndex === 0 ? 'active' : ''}">
+            <span class="line w-[20px] border-b-[2px] border-highstorm-white transition-all duration-200"></span>
+            <span class="menu-text">ABOUT ME</span>
           </div>
         </a>
-        <a href="/posts">
-          <div class="flex flex-row gap-5 text-highstorm-white font-[400] text-[20px] items-center mt-3.5 cursor-pointer">
-            <span class="w-[40px] border-b-[2px] border-highstorm-white"></span>
-            <span>MY NOTES</span>
+        <a class="hover:no-underline" href="/posts" on:click={() => {selectedMenuIndex = 1}}>
+          <div class="flex flex-row gap-3 text-highstorm-white font-[400] text-[20px] items-center mt-3.5 cursor-pointer {selectedMenuIndex === 1 ? 'active' : ''}">
+            <span class="line w-[20px] border-b-[2px] border-highstorm-white transition-all duration-200"></span>
+            <span class="menu-text">MY NOTES</span>
           </div>
         </a>
       </section>
 
       <section>
         <div class="flex gap-5">
-          <img class="w-[32px] h-[32px]" src="/svgs/github.svg" alt="Github" />
-          <img class="w-[32px] h-[32px]" src="/svgs/mail.svg" alt="Mail" />
+          <a target="_blank" href="https://github.com/JSiziba">
+            <img class="w-[32px] h-[32px]" src="/svgs/github.svg" alt="Github" />
+          </a>
+          <a href="mailto:jsiziba.zw@gmail.com">
+            <img class="w-[32px] h-[32px]" src="/svgs/mail.svg" alt="Mail" />
+          </a>
         </div>
       </section>
     </aside>
@@ -54,7 +63,7 @@
           <img class="h-[32px] aspect-auto" alt="Menu" src="/svgs/menu.svg">
         </button>
       </div>
-      <div class="h-full mt-14 mb-5 overflow-y-auto custom-scrollbar px-10 lg:px-20 xl:px-40 w-full">
+      <div class="h-full pt-14 mb-5 overflow-y-auto custom-scrollbar px-10 lg:px-20 xl:px-40 w-full">
         <slot></slot>
       </div>
     </main>
@@ -78,3 +87,20 @@
 
   </div>
 {/if}
+
+
+<style>
+  .active {
+      color: theme('colors.windrunner-blue-secondary');
+  }
+
+  .active > .menu-text {
+      font-weight: 600;
+  }
+
+  .active > .line {
+      border-bottom: 2px solid theme('colors.windrunner-blue-secondary');
+      width: 45px;
+  }
+
+</style>
