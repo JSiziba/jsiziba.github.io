@@ -30,6 +30,10 @@
 
 </script>
 
+<svelte:head>
+  <title>My Notes | Johnson Andrew Siziba</title>
+</svelte:head>
+
 
 <div class="w-full flex flex-col h-full relative">
     <div class="flex gap-2 w-full justify-center">

@@ -4,6 +4,10 @@
   import Link from "$lib/components/typography/Link.svelte";
 </script>
 
+<svelte:head>
+  <title>Creating A New Branch in Git | Johnson Andrew Siziba</title>
+</svelte:head>
+
 <div class="flex gap-3 flex-col">
   <Title>My Title</Title>
 

@@ -5,8 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79711abc-d3da-4120-aed9-44cc0d0f362b" name="Changes" comment="Typography">
+      <change afterPath="$PROJECT_DIR$/static/android-chrome-192x192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/android-chrome-512x512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/apple-touch-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/favicon-16x16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/favicon-32x32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/site.webmanifest" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/posts/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/posts/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/posts/creating-a-new-branch-in-git/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/posts/creating-a-new-branch-in-git/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/favicon.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,24 +59,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/sizib/JSiziba/MySite/jsiziba/static/pdf&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\sizib\\JSiziba\\MySite\\jsiziba\\node_modules\\prettier&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\sizib\\JSiziba\\MySite\\jsiziba\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/sizib/JSiziba/MySite/jsiziba/static",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\sizib\\JSiziba\\MySite\\jsiziba\\node_modules\\prettier",
+    "ts.external.directory.path": "C:\\Users\\sizib\\JSiziba\\MySite\\jsiziba\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sizib\JSiziba\MySite\jsiziba\static" />
       <recent name="C:\Users\sizib\JSiziba\MySite\jsiziba\static\pdf" />
     </key>
   </component>
@@ -80,7 +92,7 @@
       <workItem from="1697637753127" duration="22000" />
       <workItem from="1698598993024" duration="259000" />
       <workItem from="1702624247437" duration="78000" />
-      <workItem from="1702624344130" duration="10498000" />
+      <workItem from="1702624344130" duration="11459000" />
     </task>
     <task id="LOCAL-00001" summary="Typography">
       <option name="closed" value="true" />

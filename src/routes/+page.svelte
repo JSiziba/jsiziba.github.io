@@ -5,6 +5,10 @@
   const experience = PersonalInformationService.experience;
 </script>
 
+<svelte:head>
+  <title>About Me | Johnson Andrew Siziba</title>
+</svelte:head>
+
 <div class="w-full flex flex-col gap-20">
 
   <div class="flex flex-col gap-3 justify-center lg:hidden mb-5">
