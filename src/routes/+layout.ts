@@ -20,4 +20,5 @@ hljs.registerLanguage('json', json);
 hljs.registerLanguage('javascript', javascript);
 hljs.registerLanguage('typescript', typescript);
 hljs.registerLanguage('shell', shell);
+// bash
 storeHighlightJs.set(hljs);

@@ -4,12 +4,12 @@ export class NotesService {
   public notesList: Note[] = [
     {
       id: 1,
-      title: "Creating a new branch in git",
-      link: "creating-a-new-branch-in-git",
-      date: "2023-12-12",
+      title: "Collaborative Coding Chronicles: Mastering Git in a Scrum Team",
+      link: "mastering-git-in-a-scrum-team",
+      date: "12 Dec 2023",
       tags: [
         "git",
-        "branch",
+
       ]
     }
   ];
