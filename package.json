@@ -14,9 +14,12 @@
 		"gh-pages": "npm run build && copy .nojekyll build\\.nojekyll && npx gh-pages -d build -t true"
 	},
 	"devDependencies": {
+		"@skeletonlabs/skeleton": "^2.6.0",
+		"@skeletonlabs/tw-plugin": "^0.3.0",
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/adapter-static": "^2.0.3",
 		"@sveltejs/kit": "^1.20.4",
+		"@types/node": "^20.10.4",
 		"autoprefixer": "^10.4.16",
 		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^8.5.0",
@@ -35,5 +38,6 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"highlight.js": "^11.9.0"
 	}
 }

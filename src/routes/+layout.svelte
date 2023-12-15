@@ -13,7 +13,7 @@
     }
 </script>
 
-<div class="h-screen w-screen bg-bunting-blue overflow-hidden flex  text-highstorm-white">
+<div class="h-screen w-screen  overflow-hidden flex  text-highstorm-white">
     <aside class="w-fit h-full flex-col justify-between pt-14 pb-5 pl-14 lg:pl-20 hidden lg:flex">
       <section>
         <h1>

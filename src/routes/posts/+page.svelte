@@ -61,9 +61,7 @@
           <td class="border border-slate-600 px-4 py-2 hidden lg:table-cell">
             <div class="flex gap-2">
               {#each notesEntry.tags as tag}
-                <div class="bg-windrunner-blue-secondary text-kaladin-gray rounded px-2 py-1 text-xs">
-                  {tag}
-                </div>
+                <span class="badge variant-filled-surface">{tag}</span>
               {/each}
             </div>
           </td>

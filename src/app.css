@@ -13,32 +13,13 @@
   outline: 0;
   font-weight: 400;
   font-size: medium;
-  color: theme('colors.highstorm-white');
+  /*color: theme('colors.highstorm-white');*/
   line-height: 1.5;
 }
 
 body {
     /*font-family: 'Roboto', sans-serif;*/
     font-family: 'Inter', sans-serif;
-}
-
-.custom-scrollbar::-webkit-scrollbar {
-  width: 5px;
-}
-
-.custom-scrollbar::-webkit-scrollbar-track {
-  background: theme('colors.transparent');
-  border-radius: 5px;
-}
-
-.custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: theme('colors.windrunner-blue-secondary');
-  border-radius: 5px;
-}
-
-.custom-scrollbar {
-  scrollbar-width: thin;
-  scrollbar-color: #c1c1c1 #f1f1f1;
 }
 
 a {

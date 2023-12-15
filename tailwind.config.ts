@@ -1,6 +1,17 @@
 /** @type {import('tailwindcss').Config} */
+import { skeleton } from '@skeletonlabs/tw-plugin';
+import { join } from 'path';
+
 export default {
-  content: ['./src/**/*.{html,js,svelte,ts,md}'],
+  darkMode: 'class',
+  content: [
+    './src/**/*.{html,js,svelte,ts,md}',
+    join(require.resolve(
+        '@skeletonlabs/skeleton'),
+      '../**/*.{html,js,svelte,ts}'
+    )
+  ],
+
   theme: {
     extend: {
       colors: {
@@ -15,6 +26,10 @@ export default {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    skeleton({
+      themes: { preset: [ "skeleton" ] }
+    })
+  ],
 }
 
