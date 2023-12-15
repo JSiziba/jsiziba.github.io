@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79711abc-d3da-4120-aed9-44cc0d0f362b" name="Changes" comment="Typography">
-      <change afterPath="$PROJECT_DIR$/src/routes/posts/mastering-flags-and-bitwise-programming/+page.svelte" afterDir="false" />
+    <list default="true" id="79711abc-d3da-4120-aed9-44cc0d0f362b" name="Changes" comment="Paginate table">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/services/NotesService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/services/NotesService.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/posts/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/posts/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/posts/mastering-flags-and-bitwise-programming/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/posts/mastering-flags-and-bitwise-programming/+page.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +83,7 @@
       <workItem from="1697637753127" duration="22000" />
       <workItem from="1698598993024" duration="259000" />
       <workItem from="1702624247437" duration="78000" />
-      <workItem from="1702624344130" duration="20074000" />
+      <workItem from="1702624344130" duration="22648000" />
     </task>
     <task id="LOCAL-00001" summary="Typography">
       <option name="closed" value="true" />
@@ -94,7 +93,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702478489779</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Paginate table">
+      <option name="closed" value="true" />
+      <created>1702647407296</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702647407296</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,6 +109,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Typography" />
-    <option name="LAST_COMMIT_MESSAGE" value="Typography" />
+    <MESSAGE value="Paginate table" />
+    <option name="LAST_COMMIT_MESSAGE" value="Paginate table" />
   </component>
 </project>

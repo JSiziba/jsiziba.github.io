@@ -126,40 +126,90 @@ permissions &= ~WRITE; // Clearing WRITE, permissions is back to 1 (001 in binar
   <section class="flex flex-col gap-5">
     <h2 class="h2">Using Flags in Enums</h2>
     <p>Enums in TypeScript can be used to organize flags more effectively.</p>
-
-    <h3 class="h3">Defining Flagged Enums</h3>
+    
+    <h3 class="h3">Understanding Bitwise Flags in Enums</h3>
+    <p>When using enums for flags, each flag should represent a unique bit position in a binary number. This is why we use powers of two. Each power of two corresponds to a single binary digit being set to 1, starting from the rightmost bit.</p>
     <ul class="mx-14 list-disc">
-      <li>Purpose: Group related flags under a single enum type.</li>
-      <li>
-        Example
-        <CodeBlock lineNumbers={true} language="typescript"
-                   code={`enum Permission {
-  None = 0,
-  Read = 1 << 0,  // 1
-  Write = 1 << 1, // 2
-}
-`}>
-        </CodeBlock>
-      </li>
+      <li>1 in binary: 0001</li>
+      <li>2 in binary: 0010</li>
+      <li>4 in binary: 0100</li>
+      <li>8 in binary: 1000</li>
     </ul>
 
-    <h3 class="h3">Setting and Checking Flags with Enums</h3>
-    <ul class="mx-14 list-disc">
-      <li>
-        Setting Flags:
-        <CodeBlock lineNumbers={true} language="typescript"
-                   code={`let userPermissions = Permission.Read | Permission.Write;`}>
-        </CodeBlock>
-      </li>
-      <li>
-        Checking Flags:
-        <CodeBlock lineNumbers={true} language="typescript"
-                   code={`if (userPermissions & Permission.Write) {
-  console.log('Write permission is set.');
-}`}>
-        </CodeBlock>
-      </li>
+    <p>This approach ensures that each flag is mutually exclusive, having only one bit set in their binary representation. When you combine them using bitwise operations, you can create a unique combination of these flags without any ambiguity.</p>
 
+
+    <h3 class="h3">Defining Flagged Enums</h3>
+    <h4 class="h4">Approach 1: Direct Numeric Values</h4>
+    <p>This is the straightforward approach where each enum member is assigned a direct numeric value that represents a power of two.</p>
+    <p>Example:</p>
+    <CodeBlock lineNumbers={true} language="typescript"
+               code={`enum AccessLevel {
+  None = 0,
+  Read = 1,     // Binary: 0001
+  Write = 2,    // Binary: 0010
+  Execute = 4,  // Binary: 0100
+  Full = Read | Write | Execute // 7, Binary: 0111
+}`}>
+    </CodeBlock>
+
+    <p>Key Points:</p>
+    <ul class="mx-14 list-disc">
+      <li>Simplicity: Direct and easy to understand. Each value clearly represents the corresponding bit position.</li>
+      <li>Visual: The numeric values (1, 2, 4, etc.) directly correspond to their binary representations (0001, 0010, 0100, etc.).</li>
+      <li>Common Usage: This method is commonly used and easily recognized by many developers.</li>
+    </ul>
+
+
+    <h4 class="h4">Approach 2: Bitwise Shift Operations</h4>
+    <p>In this approach, bitwise shift operations {'(<<)'} are used to set the flag values.</p>
+    <p>Example:</p>
+    <CodeBlock lineNumbers={true} language="typescript"
+               code={`enum AccessLevel {
+  None = 0,
+  Read = 1 << 0,   // Equivalent to 1
+  Write = 1 << 1,  // Equivalent to 2
+  Execute = 1 << 2,// Equivalent to 4
+  Full = Read | Write | Execute // Still 7
+}
+`}>
+    </CodeBlock>
+
+    <p>Key Points:</p>
+    <ul class="mx-14 list-disc">
+      <li>Clarity on Bit Position: The shift operation ( {'<<'} ) makes it visually clear which bit position each flag represents. 1 {'<<'} 1 is easier to visualize as shifting the bit 1 position to the left, resulting in 2.</li>
+      <li>Consistency and Scalability: Particularly useful in enums with many members. It’s easier to keep track of bit positions (1 {'<<'} 3, 1 {'<<'} 4, etc.) rather than the corresponding decimal numbers (8, 16, etc.).</li>
+      <li>Educational Value: Demonstrates the underlying bit manipulation more explicitly, which is helpful for those learning or reviewing bitwise operations.</li>
+    </ul>
+
+    <h3 class="h3">Combining Flags</h3>
+    <p>Regardless of the approach, combining flags using bitwise OR (|) works the same way. It combines different permissions. For example you can combine these flags for a user with multiple access levels.</p>
+    <CodeBlock lineNumbers={true} language="typescript"
+               code={`let userAccess = AccessLevel.Read | AccessLevel.Write; // Combines Read and Write
+`}>
+      </CodeBlock>
+
+
+    <h3 class="h3">Checking Flags</h3>
+    <p>Checking if a flag is set also remains consistent in both approaches, utilizing the bitwise AND (&):</p>
+    <CodeBlock lineNumbers={true} language="typescript"
+               code={`if (userAccess & AccessLevel.Write) {
+  console.log('User has write access.');
+}
+`}>
+      </CodeBlock>
+
+    <h3 class="h3">Clearing Flags:</h3>
+    <p>To remove an access level, use the bitwise AND (&) with NOT (~).</p>
+    <CodeBlock lineNumbers={true} language="typescript"
+               code={`userAccess &= ~AccessLevel.Write;
+// User access is now 1 in binary: 0001 (only Read access)`}>
+      </CodeBlock>
+
+    <h3 class="h3">Why Powers of Two:</h3>
+    <ul class="mx-14 list-disc">
+      <li>Each flag occupies a unique place in the binary representation, ensuring no overlap. For instance, Read (1) and Write (2) combined make 3 (11 in binary), a distinct combination that accurately represents having both permissions.</li>
+      <li>This method is highly efficient for storing and checking multiple boolean conditions in a single number.</li>
     </ul>
 
   </section>
