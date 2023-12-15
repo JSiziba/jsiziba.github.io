@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79711abc-d3da-4120-aed9-44cc0d0f362b" name="Changes" comment="Typography">
+      <change afterPath="$PROJECT_DIR$/src/routes/posts/mastering-flags-and-bitwise-programming/+page.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/ExperienceCard.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/ExperienceCard.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/services/NotesService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/services/NotesService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/posts/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/posts/+page.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +30,7 @@
         <option value="Link" />
         <option value="Image" />
         <option value="CodeBlock" />
+        <option value="+page.svelte" />
       </list>
     </option>
   </component>
@@ -81,7 +84,7 @@
       <workItem from="1697637753127" duration="22000" />
       <workItem from="1698598993024" duration="259000" />
       <workItem from="1702624247437" duration="78000" />
-      <workItem from="1702624344130" duration="15503000" />
+      <workItem from="1702624344130" duration="20074000" />
     </task>
     <task id="LOCAL-00001" summary="Typography">
       <option name="closed" value="true" />

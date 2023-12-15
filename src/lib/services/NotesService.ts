@@ -11,13 +11,27 @@ export class NotesService {
         "git",
 
       ]
-    }
+    },
+    {
+      id: 2,
+      title: "Mastering Flags and Bitwise Operations in Programming",
+      link: "mastering-flags-and-bitwise-programming",
+      date: "12 Dec 2023",
+      tags: [
+        "bitwise",
+        "flags",
+        "enum",
+
+      ]
+    },
+
   ];
 
   public getNotesList(searchTerm?: string): Note[] {
     if (!searchTerm)
-      return this.notesList;
+      return this.notesList.reverse();
     searchTerm = searchTerm.toLowerCase();
-    return this.notesList.filter(note => note.title.toLowerCase().includes(searchTerm!) || note.tags.some(tag => tag.toLowerCase().includes(searchTerm!)));
+    return this.notesList.filter(note => note.title.toLowerCase().includes(searchTerm!) || note.tags.some(tag => tag.toLowerCase().includes(searchTerm!)))
+      .reverse();
   }
 }

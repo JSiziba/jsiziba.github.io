@@ -3,10 +3,14 @@
   import { writable } from 'svelte/store';
   import type { Note } from "$lib/models/Note";
   import { NotesService } from "$lib/services/NotesService";
+  import type { PaginationSettings } from "@skeletonlabs/skeleton";
+  import { Paginator } from "@skeletonlabs/skeleton";
 
   export const notesList = writable<Note[]>([]);
   let searchQuery: string = "";
   const notesService: NotesService = new NotesService();
+
+  let paginationSettings: PaginationSettings;
 
   onMount( () => {
     const postsData = notesService.getNotesList();
@@ -27,6 +31,20 @@
     searchQuery = "";
     updateTableContentsWithSearchTerm();
   }
+
+  notesList.subscribe( (notes) => {
+    paginationSettings = {
+      page: 0,
+      limit: 10,
+      size: notes.length,
+      amounts: [1,2,5,10],
+    } satisfies PaginationSettings;
+  });
+
+  $: paginatedSource = $notesList.slice(
+    paginationSettings.page * paginationSettings.limit,
+    paginationSettings.page * paginationSettings.limit + paginationSettings.limit
+  );
 
 </script>
 
@@ -57,7 +75,7 @@
       </thead>
       <tbody>
 
-      {#each $notesList as notesEntry}
+      {#each paginatedSource as notesEntry}
         <tr>
           <td class="border border-slate-600 px-4 py-2">
             <a href={'/posts/' + notesEntry.link}>{notesEntry.title}</a>
@@ -77,6 +95,16 @@
 
       </tbody>
     </table>
+
+    {#if paginationSettings}
+      <Paginator
+        class="my-5"
+        bind:settings={paginationSettings}
+        showFirstLastButtons="{true}"
+        showPreviousNextButtons="{true}"
+      />
+    {/if}
+
   </div>
 
 </div>
