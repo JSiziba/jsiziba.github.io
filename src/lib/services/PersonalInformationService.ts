@@ -5,10 +5,8 @@ export class PersonalInformationService {
       {
         title: "Software Developer",
         duration: "May 2023 - Present",
-        description: "As Head of IT and Systems Development, I developed" +
-          "digital products that streamlined internal processes, " +
-          "expanded the client base, conducted market analysis, " +
-          "and produced insightful reports for stock traders.",
+        description: "As a key member of our development team, my role centers around developing dynamic, data-intensive applications. " +
+          "These applications are the backbone of our business, serving a dual purpose: empowering our internal teams and elevating our clients' experiences.",
         companyName: "Quintessence Software",
         companyWebsite: "https://www.quintessencesoftware.com/",
         skills: [

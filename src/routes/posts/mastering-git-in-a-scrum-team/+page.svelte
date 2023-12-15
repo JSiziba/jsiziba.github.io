@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-  <title>Creating A New Branch in Git | Johnson Andrew Siziba</title>
+  <title>Collaborative Coding Chronicles: Mastering Git in a Scrum Team</title>
 </svelte:head>
 
 <div class="flex gap-3 flex-col">
