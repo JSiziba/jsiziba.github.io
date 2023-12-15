@@ -1,6 +1,7 @@
 <script>
   import Title from "$lib/components/typography/Title.svelte";
   import { CodeBlock } from "@skeletonlabs/skeleton";
+  import Link from "$lib/components/typography/Link.svelte";
 </script>
 
 <div class="flex gap-3 flex-col">
@@ -16,8 +17,8 @@
   <h5 class="h5">Skeleton H5</h5>
   <h6 class="h6">Skeleton H6</h6>
 
-
-
-
+  <Link popupLink="https://jemina.capital/">
+    <a href="#">Skeleton Link</a>
+  </Link>
 
 </div>
