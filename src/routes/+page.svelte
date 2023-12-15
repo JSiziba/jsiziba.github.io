@@ -44,14 +44,15 @@
 
   <section>
     <h2>
-      <a class="text-lg font-medium text-highstorm-white" href="/pdf/JOHNSON%20A.%20SIZIBA%20CV.pdf" download>View Full CV</a>
+      <a class="text-lg font-medium h2 text-highstorm-white" href="/pdf/JOHNSON%20A.%20SIZIBA%20CV.pdf" download>Download Full CV</a>
     </h2>
+    <p>Download my full CV to learn more about my work experience, education, and skills.</p>
   </section>
 
-  <section>
+<!--  <section>-->
 <!--    <h2 class="text-lg font-medium">PROJECTS</h2>-->
 
-    <div class="mt-10">
+<!--    <div class="mt-10">-->
 <!--      <ProjectCard-->
 <!--        title="Jemina Capital"-->
 <!--        description="A mobile application for Jemina Capital, a leading stock broking company in Zimbabwe."-->
@@ -60,16 +61,20 @@
 <!--        skills={[]}-->
 <!--        rating="4.5k+ Downloads"-->
 <!--      />-->
-    </div>
+<!--    </div>-->
 
-  </section>
+<!--  </section>-->
 
   <section>
-    <div class="w-full flex items-center">
-      <p class="max-w-[700px] text-sylphrena-cyan">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur cupiditate deserunt dolorem excepturi illo in minus molestiae nesciunt nostrum obcaecati optio placeat praesentium quaerat sequi similique tempore, ut vitae.
-        <br> <br>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, consectetur dolores harum maxime minima necessitatibus quas quis sit unde veritatis? Accusamus dolorum et incidunt optio praesentium ratione sed tempora temporibus?
+    <hr class="!border-dotted" />
+
+    <div class="w-full flex flex-col items-center opacity-60 mt-5">
+      <p>
+        In the world of software, every day brings a new possibility. If you have an exciting project or an opportunity to explore, I'm just an email away. Let's push the boundaries of what's possible together.
+      </p>
+      <br>
+      <p>
+        Driven by a passion for innovation and a love for problem-solving, I am always eager to discuss new technologies, ideas, or collaborations. Whether it's a start-up venture, a community project, or just a chat over coffee about the latest in software development, I'm all ears. Let's make something amazing happen!
       </p>
     </div>
   </section>
