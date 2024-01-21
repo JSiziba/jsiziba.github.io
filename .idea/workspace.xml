@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79711abc-d3da-4120-aed9-44cc0d0f362b" name="Changes" comment="Paginate table">
+    <list default="true" id="79711abc-d3da-4120-aed9-44cc0d0f362b" name="Changes" comment="Update enums article">
+      <change afterPath="$PROJECT_DIR$/src/routes/posts/configure-springboot-to-use-different-properties-files/+page.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/posts/how-i-used-certbort-to-get-a-free-ssl-certificate/+page.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/Screenshot 2024-01-21 105929.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/posts/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/posts/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/posts/mastering-flags-and-bitwise-programming/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/posts/mastering-flags-and-bitwise-programming/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/services/NotesService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/services/NotesService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+layout.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,18 +59,22 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/sizib/JSiziba/MySite/jsiziba/static",
+    "last_opened_file_path": "C:/Users/JohnsonS/Desktop/jsiziba/src/routes/posts/configure-springboot-to-use-different-properties-files",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\sizib\\JSiziba\\MySite\\jsiziba\\node_modules\\prettier",
-    "ts.external.directory.path": "C:\\Users\\sizib\\JSiziba\\MySite\\jsiziba\\node_modules\\typescript\\lib",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\JohnsonS\\Desktop\\jsiziba\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "ts.external.directory.path": "C:\\Users\\JohnsonS\\Desktop\\jsiziba\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\JohnsonS\Desktop\jsiziba\src\routes\posts\configure-springboot-to-use-different-properties-files" />
+      <recent name="C:\Users\JohnsonS\Desktop\jsiziba\static\images" />
+      <recent name="C:\Users\JohnsonS\Desktop\jsiziba\src\routes\posts\how-i-used-certbort-to-get-a-free-ssl-certificate" />
       <recent name="C:\Users\sizib\JSiziba\MySite\jsiziba\static" />
       <recent name="C:\Users\sizib\JSiziba\MySite\jsiziba\static\pdf" />
     </key>
@@ -83,7 +90,11 @@
       <workItem from="1697637753127" duration="22000" />
       <workItem from="1698598993024" duration="259000" />
       <workItem from="1702624247437" duration="78000" />
-      <workItem from="1702624344130" duration="22648000" />
+      <workItem from="1702624344130" duration="25244000" />
+      <workItem from="1702940179156" duration="601000" />
+      <workItem from="1704283611192" duration="641000" />
+      <workItem from="1704361750339" duration="639000" />
+      <workItem from="1705832757113" duration="3661000" />
     </task>
     <task id="LOCAL-00001" summary="Typography">
       <option name="closed" value="true" />
@@ -101,7 +112,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702647407296</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Update enums article">
+      <option name="closed" value="true" />
+      <created>1702650478737</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1702650478737</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +129,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Typography" />
     <MESSAGE value="Paginate table" />
-    <option name="LAST_COMMIT_MESSAGE" value="Paginate table" />
+    <MESSAGE value="Update enums article" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update enums article" />
   </component>
 </project>

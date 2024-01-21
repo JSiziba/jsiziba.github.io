@@ -12,7 +12,9 @@ import json from 'highlight.js/lib/languages/json';
 import javascript from 'highlight.js/lib/languages/javascript';
 import typescript from 'highlight.js/lib/languages/typescript';
 import shell from 'highlight.js/lib/languages/shell';
-// Register each imported language module
+import java from 'highlight.js/lib/languages/java';
+import plaintext from 'highlight.js/lib/languages/plaintext';
+import dart from 'highlight.js/lib/languages/dart';
 
 hljs.registerLanguage('xml', xml); // for HTML
 hljs.registerLanguage('css', css);
@@ -20,5 +22,8 @@ hljs.registerLanguage('json', json);
 hljs.registerLanguage('javascript', javascript);
 hljs.registerLanguage('typescript', typescript);
 hljs.registerLanguage('shell', shell);
-// bash
+hljs.registerLanguage('java', java);
+hljs.registerLanguage('plaintext', plaintext);
+hljs.registerLanguage('dart', dart);
+
 storeHighlightJs.set(hljs);
