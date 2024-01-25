@@ -1,3 +1,12 @@
+<svelte:head>
+	<title>Zimba Properties Privacy Policy</title>
+</svelte:head>
+
+
+<p class="text-[55px] text-center mb-[50px]">
+	Zimba Properties Terms and Conditions, and Privacy Policy
+</p>
+
 <h1>Terms and Conditions</h1>
 
 <h2>1. Acceptance of Terms</h2>
