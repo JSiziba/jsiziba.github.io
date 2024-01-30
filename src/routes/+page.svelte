@@ -28,7 +28,7 @@
     <p>
       My main focus these days is developing dynamic, data-intensive applications that not only empower our internal teams but also elevate our clients' experiences at
       <a target="_blank" href="https://www.quintessencesoftware.com/">Quintessence Software</a>. Outside of work, my creative spirit doesn't rest - I delve into developing
-      <a target="_blank" href="https://play.google.com/store/apps/developer?id=Johnson+Andrew+Siziba&hl=en&gl=US">mobile applications</a> that often reflect my personal interests and skills.
+      <a target="_blank" href="https://play.google.com/store/apps/developer?id=Johnson+Andrew+Siziba">mobile applications</a> that often reflect my personal interests and skills.
     </p> <br>
 
     <p>

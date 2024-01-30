@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79711abc-d3da-4120-aed9-44cc0d0f362b" name="Changes" comment="Update enums article">
+      <change afterPath="$PROJECT_DIR$/static/svgs/linkedin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/svgs/whatsapp.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/zimba-terms-and-conditions/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/zimba-terms-and-conditions/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +97,10 @@
       <workItem from="1705902606675" duration="29000" />
       <workItem from="1706198121122" duration="128000" />
       <workItem from="1706198265284" duration="1403000" />
-      <workItem from="1706200099542" duration="181000" />
+      <workItem from="1706200099542" duration="232000" />
+      <workItem from="1706208405191" duration="1788000" />
+      <workItem from="1706237754917" duration="32000" />
+      <workItem from="1706621884929" duration="418000" />
     </task>
     <task id="LOCAL-00001" summary="Typography">
       <option name="closed" value="true" />
