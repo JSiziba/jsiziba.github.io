@@ -59,7 +59,6 @@
           <a href="https://wa.me/263784310119" target="_blank">
             <img class="w-[32px] h-[32px]" src="/svgs/whatsapp.svg" alt="WhatsApp" />
           </a>
-
         </div>
       </section>
     </aside>
@@ -90,6 +89,22 @@
           <span>My notes</span>
         </div>
       </div>
+      <section class="mt-10 flex justify-center">
+      <div class="flex gap-5">
+        <a target="_blank" href="https://github.com/JSiziba">
+          <img class="w-[32px] h-[32px]" src="/svgs/github.svg" alt="Github" />
+        </a>
+        <a href="mailto:jsiziba.zw@gmail.com" target="_blank">
+          <img class="w-[32px] h-[32px]" src="/svgs/mail.svg" alt="Mail" />
+        </a>
+        <a href="https://www.linkedin.com/in/johnson-siziba-804a091a3/" target="_blank">
+          <img class="w-[32px] h-[32px]" src="/svgs/linkedin.svg" alt="Linkedin" />
+        </a>
+        <a href="https://wa.me/263784310119" target="_blank">
+          <img class="w-[32px] h-[32px]" src="/svgs/whatsapp.svg" alt="WhatsApp" />
+        </a>
+      </div>
+      </section>
     </div>
 
   </div>
