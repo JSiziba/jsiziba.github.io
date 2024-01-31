@@ -87,7 +87,7 @@
               {/each}
             </div>
           </td>
-          <td class="border border-slate-600 px-4 py-2 hidden lg:table-cell">
+          <td class="border border-slate-600 px-4 py-2 hidden lg:table-cell whitespace-nowrap">
             {notesEntry.date}
           </td>
         </tr>
