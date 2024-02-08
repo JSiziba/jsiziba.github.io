@@ -19,14 +19,6 @@ export class PersonalInformationService {
             link: ""
           },
           {
-            name: "C#",
-            link: ""
-          },
-          {
-            name: ".NET Core",
-            link: ""
-          },
-          {
             name: "TypeScript",
             link: ""
           },
