@@ -48,6 +48,20 @@ export class NotesService {
       ]
     },
 
+    {
+      id: 5,
+      title: "Understanding Angular OnChanges Lifecycle Hook",
+      link: "understanding-ng-on-changes",
+      date: "25 Feb 2024",
+      tags: [
+        "Angular",
+        "Lifecycle Hooks",
+        "OnChanges",
+      ]
+    },
+
+
+
   ];
 
   public getNotesList(searchTerm?: string): Note[] {
