@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+		<link rel="manifest" href="../site.webmanifest">
+
+		<title>Johnson Andrew Siziba</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../_app/immutable/assets/0.131c26ee.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/ProgressBar.4f1e9ba5.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.9795d967.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/scheduler.d8ec4c9c.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.2c6e150f.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.f5f261b0.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.57908e58.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.f60eb3ad.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.cf62ae09.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/stores.3eb891df.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/ProgressBar.svelte_svelte_type_style_lang.7c14f914.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/2.f2c55e72.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/11.a50ff09d.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/CodeBlock.3792ad78.js"><title>
+  Understanding ngOnChanges in Angular: A Complete Guide
+</title><!-- HEAD_svelte-1hqdqan_START --><!-- HEAD_svelte-1hqdqan_END -->
+	</head>
+	<body data-theme="skeleton" data-sveltekit-preload-data="hover">
+		<div style="display: contents">  <div class="h-screen w-screen overflow-hidden flex text-highstorm-white"><aside class="w-fit h-full flex-col justify-between pt-14 pb-5 pl-14 lg:pl-20 hidden lg:flex"><section data-svelte-h="svelte-1fdsu4p"><h1><a class="font-bold text-[32px] whitespace-nowrap text-highstorm-white hover:text-highstorm-white hover:no-underline" href="/">Johnson Andrew Siziba</a></h1> <h2 class="font-[500] text-[24px]">Software Engineer</h2> <p class="pt-3.5 font-normal text-[16px]">Navigating the Infinite Possibilities of Software</p></section> <section><a class="hover:no-underline" href="/"><div class="flex flex-row gap-3 text-highstorm-white font-[400] text-[20px] items-center cursor-pointer active svelte-z7pr3n"><span class="line w-[20px] border-b-[2px] border-highstorm-white transition-all duration-200 svelte-z7pr3n"></span> <span class="menu-text svelte-z7pr3n" data-svelte-h="svelte-fg6vst">ABOUT ME</span></div></a> <a class="hover:no-underline" href="/posts"><div class="flex flex-row gap-3 text-highstorm-white font-[400] text-[20px] items-center mt-3.5 cursor-pointer  svelte-z7pr3n"><span class="line w-[20px] border-b-[2px] border-highstorm-white transition-all duration-200 svelte-z7pr3n"></span> <span class="menu-text svelte-z7pr3n" data-svelte-h="svelte-w00dt3">MY NOTES</span></div></a></section> <section data-svelte-h="svelte-8tj2pr"><div class="flex gap-5"><a target="_blank" href="https://github.com/JSiziba"><img class="w-[32px] h-[32px]" src="/svgs/github.svg" alt="Github"></a> <a href="mailto:jsiziba.zw@gmail.com" target="_blank"><img class="w-[32px] h-[32px]" src="/svgs/mail.svg" alt="Mail"></a> <a href="https://www.linkedin.com/in/johnson-siziba-804a091a3/" target="_blank"><img class="w-[32px] h-[32px]" src="/svgs/linkedin.svg" alt="Linkedin"></a> <a href="https://wa.me/263784310119" target="_blank"><img class="w-[32px] h-[32px]" src="/svgs/whatsapp.svg" alt="WhatsApp"></a></div></section></aside> <main class="h-screen flex flex-col w-full"><div class="flex justify-between lg:hidden w-full h-[55px] bg-windrunner-blue-primary items-center px-5"><button class="outline-0 border-0 bg-transparent" data-svelte-h="svelte-b3ztzr"><img class="h-[32px] aspect-auto" alt="Menu" src="/svgs/menu.svg"></button></div> <div class="h-full pt-14 mb-5 overflow-y-auto custom-scrollbar px-10 lg:px-20 xl:px-40 w-full"><div class="w-full"> <div class="flex gap-3 flex-col"><h2 data-svelte-h="svelte-e3u9wt">Understanding ngOnChanges</h2> <p data-svelte-h="svelte-y7d1uo">`ngOnChanges` is an important lifecycle hook in Angular components. Here&#39;s a breakdown of its functionality:</p>
+
+  * <strong data-svelte-h="svelte-1gcfgwt">Tracks Changes:</strong> Angular&#39;s change detection automatically triggers it whenever one or more input properties of a component change.
+  * <strong data-svelte-h="svelte-xysm4x">Input Properties:</strong> These are properties decorated with `@Input()` in your component, allowing data to flow from parent components to child components.
+  * <strong data-svelte-h="svelte-g0zl0a">Reacting to Change:</strong> The `ngOnChanges` function provides a place to write code that responds specifically to changes in these input properties.
+
+  <h3 data-svelte-h="svelte-qut25a">Code Breakdown</h3>
+
+  Here&#39;s a line-by-line analysis of the code snippet:
+
+
+   <div class="codeblock overflow-hidden shadow bg-neutral-900/90  text-sm text-white rounded-container-token shadow " data-testid="codeblock"> <header class="codeblock-header text-xs text-white/50 uppercase flex justify-between items-center p-2 pl-4"> <span class="codeblock-language">html</span>  <button class="codeblock-btn btn btn-sm variant-soft !text-white">Copy</button></header>  <pre class="codeblock-pre whitespace-pre-wrap break-all p-4 pt-1"><code class="codeblock-code language-html lineNumbers"><!-- HTML_TAG_START -->ngOnChanges(changes: SimpleChanges) {<!-- HTML_TAG_END --></code></pre></div>
+
+  * This defines the `ngOnChanges` function, part of the `OnChanges` interface.
+  * The function takes a `changes` argument (`SimpleChanges`) that holds details about changed input properties.
+
+   <div class="codeblock overflow-hidden shadow bg-neutral-900/90  text-sm text-white rounded-container-token shadow " data-testid="codeblock"> <header class="codeblock-header text-xs text-white/50 uppercase flex justify-between items-center p-2 pl-4"> <span class="codeblock-language">html</span>  <button class="codeblock-btn btn btn-sm variant-soft !text-white">Copy</button></header>  <pre class="codeblock-pre whitespace-pre-wrap break-all p-4 pt-1"><code class="codeblock-code language-html lineNumbers"><!-- HTML_TAG_START -->if (changes[&#x27;collections&#x27;])<!-- HTML_TAG_END --></code></pre></div>
+
+  * Checks if the &#39;collections&#39; input property has been modified.
+
+   <div class="codeblock overflow-hidden shadow bg-neutral-900/90  text-sm text-white rounded-container-token shadow " data-testid="codeblock"> <header class="codeblock-header text-xs text-white/50 uppercase flex justify-between items-center p-2 pl-4"> <span class="codeblock-language">html</span>  <button class="codeblock-btn btn btn-sm variant-soft !text-white">Copy</button></header>  <pre class="codeblock-pre whitespace-pre-wrap break-all p-4 pt-1"><code class="codeblock-code language-html lineNumbers"><!-- HTML_TAG_START -->console.log(&#x27;collections changed&#x27;, changes[&#x27;collections&#x27;].currentValue);<!-- HTML_TAG_END --></code></pre></div>
+
+  * Logs a message and the new value of the &#39;collections&#39; input to the console.
+
+    <h3 data-svelte-h="svelte-wcw1m3">In Summary</h3>
+
+    The code shows how to use `ngOnChanges` to:
+
+    1. Monitor changes to a &#39;collections&#39; input property.
+    2. Log the new &#39;collections&#39; value to the console.
+
+    <h3 data-svelte-h="svelte-1lxruk1">When to Use ngOnChanges</h3> <strong data-svelte-h="svelte-1ato2jc">Updating internal state:</strong> Modify the component&#39;s state based on input property changes. <br> <strong data-svelte-h="svelte-1nn30jj">Triggering actions:</strong>  Fetch data, re-render the UI, etc., in response to input changes. <br> <strong data-svelte-h="svelte-1dyse71">Data Validation/Manipulation:</strong> Perform tasks when an input property changes. <br></div></div></div></main></div>  
+			
+			<script>
+				{
+					__sveltekit_5xpnxt = {
+						base: new URL("..", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null,null];
+
+					Promise.all([
+						import("../_app/immutable/entry/start.9795d967.js"),
+						import("../_app/immutable/entry/app.57908e58.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2, 11],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
